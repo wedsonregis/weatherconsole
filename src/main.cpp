@@ -30,6 +30,7 @@ void loop()
         HTTPClient http;
 
         http.begin("http://openweathermap.org/data/2.5/weather?q="+city+"&appid="+key+"");
+        //http://openweathermap.org/data/2.5/weather?q=recife&appid=b6907d289e10d714a6e88b30761fae22
         int httpCode = http.GET();
 
         if (httpCode > 0) {
